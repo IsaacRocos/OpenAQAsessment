@@ -5,13 +5,13 @@ import org.apache.logging.log4j.Logger;
 
 public class Log4J2PropertiesConf {
 	
-    private static Logger logger = LogManager.getLogger();
+     static Logger logger = LogManager.getLogger();
     
     public void performSomeLogs(){
-        logger.debug("DEBUG test message");
-        logger.info("INFO test message");
-        logger.warn("WARN test message");
-        logger.error("ERROR test message");
-        logger.fatal("FATAL test message");
+        logger.debug("This is a DEBUG test message");
+        logger.info("This is a INFO test message");
+        logger.warn("This is a WARN test message");
+        logger.error("This is a ERROR test message");
+        logger.fatal("This is a FATAL test message");
     }
 }

@@ -20,5 +20,26 @@ public enum AirQualityParameter {
 	public String getName() {
 		return name;
 	}
+	
+	public static AirQualityParameter getEnumParameter(String name) {
+		
+		if(name.equals(PM10.getName())) {
+			return PM10;
+		} else if(name.equals(PM25.getName())) {
+			return PM25;
+		}else if(name.equals(CO.getName())) {
+			return CO;
+		}else if(name.equals(NO2.getName())) {
+			return NO2;
+		}else if(name.equals(SO2.getName())) {
+			return SO2;
+		}else if(name.equals(BC.getName())) {
+			return BC;
+		}else if(name.equals(O3.getName())) {
+			return O3;
+		}
+		
+		return null;
+	}
 
 }

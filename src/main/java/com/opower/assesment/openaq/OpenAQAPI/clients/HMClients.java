@@ -11,14 +11,22 @@ import com.opower.assesment.openaq.OpenAQAPI.schemas.Location;
 @Component
 public class HMClients {
 	
-	
+	/**
+	 * 
+	 * @param url
+	 * @return
+	 */
 	public LocationsDTO doGetLocations(String url) {
 		RestTemplate template = new RestTemplate();
 		ResponseEntity<LocationsDTO> response =  template.getForEntity(url, LocationsDTO.class);
 		return response.getBody();
 	}
 	
-	
+	/**
+	 * 
+	 * @param url
+	 * @return
+	 */
 	public MeasurementsDTO doGetMeasurements(String url) {
 		RestTemplate template = new RestTemplate();
 		ResponseEntity<MeasurementsDTO> response =  template.getForEntity(url, MeasurementsDTO.class);

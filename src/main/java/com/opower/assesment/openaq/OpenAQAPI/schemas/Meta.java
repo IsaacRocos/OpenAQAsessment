@@ -53,6 +53,8 @@ public class Meta {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-		
+	public void increaseFound() {
+		this.found++;
+	}
 
 }

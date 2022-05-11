@@ -15,6 +15,7 @@ public class Measurement {
         private boolean isAnalysis;
         private String entity;
         private String sensorType;
+        private double heatMapValue;
         
 		public String getLocationId() {
 			return locationId;
@@ -93,6 +94,12 @@ public class Measurement {
 		}
 		public void setCoordinates(Coordinate coordinates) {
 			this.coordinates = coordinates;
+		}
+		public double getHeatMapValue() {
+			return heatMapValue;
+		}
+		public void setHeatMapValue(double heatMapValue) {
+			this.heatMapValue = heatMapValue;
 		}
         
 }

@@ -11,9 +11,12 @@ import com.opower.assesment.openaq.OpenAQAPI.util.Util;
 public class UtilTest {
 	
 	@Test
+	/**
+	 * Normalizar un valor en el rango de 0 a 255. Si el rango es el mismo, debe retornar el mismo valor
+	 */
 	void testNormalization() {
 		int val = 10;
-		int normalizedVal = Util.normalize(255, val, 0, 255);
+		double normalizedVal = Util.normalize(val, 0, 255, 0, 255);
 		assertEquals(normalizedVal, val);
 	}
 

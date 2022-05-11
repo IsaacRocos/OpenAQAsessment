@@ -1,5 +1,7 @@
 package com.opower.assesment.openaq.OpenAQAPI;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -13,11 +15,8 @@ public class Log4J2PropertiesConfTest {
     void testPerformSomeTask() throws Exception {
         Log4J2PropertiesConf log4J2PropertiesConf = new Log4J2PropertiesConf();
         log4J2PropertiesConf.performSomeLogs();
-        
+        assertNotNull(log4J2PropertiesConf);
     }
-    
-    
-    
     
     
 }

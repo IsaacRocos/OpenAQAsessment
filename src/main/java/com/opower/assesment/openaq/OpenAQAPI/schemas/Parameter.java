@@ -12,6 +12,7 @@ public class Parameter {
 	private java.util.Date lastUpdated;
 	private int parameterId;
 	private java.util.Date firstUpdated;
+	private double heatMapValue;
 	
 	
 	public long getId() {
@@ -73,6 +74,12 @@ public class Parameter {
 	}
 	public void setFirstUpdated(java.util.Date firstUpdated) {
 		this.firstUpdated = firstUpdated;
+	}
+	public double getHeatMapValue() {
+		return heatMapValue;
+	}
+	public void setHeatMapValue(double heatMapValue) {
+		this.heatMapValue = heatMapValue;
 	}
 	
 	
