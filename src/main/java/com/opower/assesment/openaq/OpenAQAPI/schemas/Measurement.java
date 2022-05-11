@@ -1,14 +1,11 @@
-package com.opower.assesment.openaq.OpenAQAPI.dto;
+package com.opower.assesment.openaq.OpenAQAPI.schemas;
 
-import com.opower.assesment.openaq.OpenAQAPI.schemas.Coordinate;
-import com.opower.assesment.openaq.OpenAQAPI.schemas.Date;
-
-public class MeasurementDTO {
+public class Measurement {
 	
         private String locationId;
         private String location;
         private String parameter;
-        private float value;
+        private double value;
         private Date date;
         private String unit;
         private Coordinate coordinates;        
@@ -37,10 +34,10 @@ public class MeasurementDTO {
 		public void setParameter(String parameter) {
 			this.parameter = parameter;
 		}
-		public float getValue() {
+		public double getValue() {
 			return value;
 		}
-		public void setValue(float value) {
+		public void setValue(double value) {
 			this.value = value;
 		}
 		public String getUnit() {
